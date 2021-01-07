@@ -131,6 +131,8 @@ class MobileNetV3_Small(tf.keras.Model):
 
 
 if __name__ == '__main__':
+    import numpy as np
+
     model = MobileNetV3_Small()
     model.build(input_shape=(1, 150, 40))
     model.summary()
